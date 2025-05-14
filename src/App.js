@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import NavBar from './Components/NavBar';
+import Compteur from './Components/Compteur';
+import Calculatrice from './Components/Calculatrice';
+import Binome from './Components/Binome';
 
 function App() {
+  const [message, setMessage] = useState('');
+  const [showCompteur, setShowCompteur] = useState(false);
+
+  const Accueil = () => {
+    setMessage('Bienvenue dans Accueil');
+    setShowCompteur(false);
+  };
+
+  const Produits = () => {
+    setMessage('Bienvenue dans Produits');
+    setShowCompteur(false);
+  };
+
+  const Contact = () => {
+    setMessage('Bienvenue dans Contact');
+    setShowCompteur(false);
+  };
+
+  const afficherCompteur = () => {
+    setMessage('');
+    setShowCompteur(true);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Binome />
     </div>
   );
 }

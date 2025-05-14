@@ -1,0 +1,24 @@
+.navbar {
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.navbar button:hover {
+  border-color: #007bff;
+  color: #007bff;
+  background-color: #e9f0ff;
+}
