@@ -3,6 +3,8 @@ import NavBar from './Components/NavBar';
 import Compteur from './Components/Compteur';
 import Calculatrice from './Components/Calculatrice';
 import Binome from './Components/Binome';
+import UserCard from './Components/UserCard';
+import TexteBouton from './Components/TexteBouton';
 
 function App() {
   const [message, setMessage] = useState('');
@@ -30,7 +32,10 @@ function App() {
 
   return (
     <div className="App">
+
       <Binome />
+      <UserCard />
+      <TexteBouton />
     </div>
   );
 }
